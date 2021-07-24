@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-    <script src="js/index.js"></script>
+
+<script src="js/index.js"></script>
     <title>Care & Care</title>
     <style>
         a{
@@ -26,7 +27,7 @@
         #main-section{
             display: grid;
             grid-template-columns: 1fr 1fr;
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
 
         #main-section div{
@@ -42,7 +43,16 @@
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  
         }
+
+ .link-holder{
+    display:grid;
+    grid-template-columns: 80% 20%;
+ }
+
+
+
         #services h1{
             text-align: center;
             font-size: 3rem;
@@ -55,8 +65,8 @@
             
         }
         #service-box div{
-            width: 200px;
-            height: 200px;
+            width:30vw;
+            height: 33vh;
             background: #000;
             margin: auto;
         }
@@ -101,8 +111,10 @@ footer{
     color: white;
 }
 footer img{
-    max-width: 100%;
-    padding: 5px;
+    max-width: 95%;
+    height: auto;
+    margin: 5px auto auto auto;
+    
 }
 
 
@@ -111,6 +123,7 @@ footer img{
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
+  
 }
 
 
@@ -131,14 +144,32 @@ footer img{
             </div>
             
             <div id="main-links">
-                <div>
-                    <p><a href="#services"> Our Services→</a> </p> 
-                    <p><a href="#footer">   Reach Us→</a></p>
-                    <p><a href="#info">     Doctors Listing →</a></p>
-                </div>
-            
-                
-                
+                <div style="padding-right: 10%;" >
+                    <div class="link-holder" style="border-bottom: solid 1px #000 ;border-top: solid 1px #000 ;">
+                        
+                        <div >
+                            
+                            <a  href="#services">Our Services  </a></div>
+                        <div >&#8594;</div>
+                        
+                    </div> 
+                    
+                    <div class="link-holder" >
+                        
+                        <div >
+                            
+                            <a  href="#info">Doctors listing</a></div>
+                        <div >&#8594;</div>
+                        
+                    </div> 
+                    
+                    <div class="link-holder" style="border-bottom: solid 1px #000 ;border-top: solid 1px #000 ;">
+                        <div ><a  href="#footer">Contact Us </a></div>
+                        <div >&#8594;</div>
+                    </div> 
+  
+            </div> 
+
             </div>
         </Section>
         <h1>&nbsp;</h1>
@@ -177,8 +208,7 @@ footer img{
         </section>
         <h1>&nbsp;</h1>
         <footer id="footer">
-            <div ><a href="https://www.google.com/maps?q=11.2732382,75.7753408&z=17&hl=en"><img src="img/map.png" alt=""></a>
-                </div>
+            
             <div class="details"><div>
                 <h1>Care & Cure</h1>
                 <p>Homeopathy Pharmacy & Clinic</p>
@@ -197,6 +227,8 @@ footer img{
                 </div>
                 
 
+            </div>
+            <div ><a href="https://www.google.com/maps?q=11.2732382,75.7753408&z=17&hl=en"><img src="img/map.png" alt=""></a>
             </div>
         </footer>
         <p style="text-align: center;background-color: #000;color:white">&#169; Zegus 2021</p>
