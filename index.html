@@ -8,132 +8,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
 <script src="js/index.js"></script>
     <title>Care & Care</title>
-    <style>
-        a{
-            text-decoration: none;
-            color: black;
-        }
-        a:hover{
-            text-decoration: underline;
-        }
-        #title-img{
-            width: 100%;
-            height: auto;
-        }
-
-        #main-section{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            font-size: 2.5rem;
-        }
-
-        #main-section div{
-            padding-left: 20px;
-        }
-       
-
-
-        #main-links div{
-            margin: 0;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  
-        }
-
- .link-holder{
-    display:grid;
-    grid-template-columns: 80% 20%;
- }
-
-
-
-        #services h1{
-            text-align: center;
-            font-size: 3rem;
-            
-        }
-        #service-box{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            text-align: center;
-            
-        }
-        #service-box div{
-            width:30vw;
-            height: 33vh;
-            background: #000;
-            margin: auto;
-        }
-#about{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-}
-
-#about h1{
-    font-size: 3rem;
-    text-align: center;
-}
-
-#about p{
-    font-size: 1.5rem;
-}
-        #parent {
-            margin: auto;
-            max-width: 80%;
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(2, auto);
-grid-column-gap: 10px;
-grid-row-gap: 0px;
-
-
-}
-
-#parent img{
-    max-width: 100%;
-}
-
-.div1 { grid-area: 1 / 1 / 2 / 3; }
-.div2 { grid-area: 2 / 1 / 3 / 2; }
-.div3 { grid-area: 2 / 2 / 3 / 3; }
-
-footer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
-    grid-gap: 10px;
-    background-color: #000;
-    color: white;
-}
-footer img{
-    max-width: 95%;
-    height: auto;
-    margin: 5px auto auto auto;
-    
-}
-
-
-.details div{
-    position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  
-}
-
-
-            
-        
-
-    </style>
-    
 </head>
 <body>
     
@@ -141,59 +34,59 @@ footer img{
             <img id="title-img" src="img/title.png" alt="cnc">
         </header>
         <Section id="main-section">
-            <div>
+            <div id="main-img">
                 <img src="img/doctor.jpg" style="max-width: 100%;" alt="">
             </div>
             
             <div id="main-links">
-                <div style="padding-right: 10%;" >
-                    <div class="link-holder" style="border-bottom: solid 1px #000 ;border-top: solid 1px #000 ;">
-                        
-                        <div >
-                            
-                            <a  href="#services">Our Services  </a></div>
-                        <div >&#8594;</div>
-                        
-                    </div> 
+                <div>
+                    <div ><h1>&nbsp;</h1></div>
                     
-                    <div class="link-holder" >
-                        
-                        <div >
-                            
-                            <a  href="#info">Doctors listing</a></div>
+                </div>
+                
+
+                    <div class="link-holder" id="top-link">
+                        <div><a class="link-itself" href="#services">
+                          Our Services</a></div>
                         <div >&#8594;</div>
-                        
-                    </div> 
-                    
-                    <div class="link-holder" style="border-bottom: solid 1px #000 ;border-top: solid 1px #000 ;">
-                        <div ><a  href="#footer">Contact Us </a></div>
+                    </div>
+                    <div class="link-holder">
+                        <div><a class="link-itself" href="#footer">Reach Us</a></div>
                         <div >&#8594;</div>
-                    </div> 
-  
+                    </div>
+                    <div class="link-holder">
+                        <div ><a class="link-itself" href="tel:+918075043552">Book an Appointment </a></div>
+                        <div >&#8594;</div>
+                    </div>
+                    <div>
+                        
+                        <div ><h1>&nbsp;</h1></div>
+                    </div>
             </div> 
 
             </div>
         </Section>
         <h1>&nbsp;</h1>
 <section id="about">
-    <div id="parent">
-        <div class="div1" id="im1"><img src="img/slide1.jpeg" alt=""></img></div>
-        <div class="div2" id="im2"><img src="img/slide2.jpeg" alt=""></img></div>
-        <div class="div3" id="im3"><img src="img/slide3.jpeg" alt=""></img></div>
-    </div>
-    <div>
+    
+    <div id="description">
         <h1>About Us</h1>
-        <p style="line-height:200%">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Inventore harum doloribus adipisci numquam earum natus magni necessitatibus 
             molestias quis distinctio, ducimus, voluptatem nihil aliquid rerum praesentium. 
             Beatae enim tempore sequi.</p>
             <br>
-            <p style="line-height:200%">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Inventore harum doloribus adipisci numquam earum natus magni necessitatibus 
                 molestias quis distinctio, ducimus, voluptatem nihil aliquid rerum praesentium. 
                 Beatae enim tempore sequi.</p>
                 <br>
 
+    </div>
+    <div id="parent">
+        <div class="div1" id="im1"><img src="img/slide1.jpeg" alt=""></img></div>
+        <div class="div2" id="im2"><img src="img/slide2.jpeg" alt=""></img></div>
+        <div class="div3" id="im3"><img src="img/slide3.jpeg" alt=""></img></div>
     </div>
 </section>
 <h1>&nbsp;</h1>
@@ -202,9 +95,9 @@ footer img{
             <h1>Our Services</h1>
             <h3>&nbsp;</h3>
             <div id="service-box">
-                <div>boo</div>
-                <div>foo</div>
-                <div>Koo</div>
+                <div id="service1"><div>boo</div></div>
+                <div id="service2"><div>boo</div></div>
+                <div id="service3"><div>boo</div></div>
             </div>
            <h3>&nbsp;</h3>
         </section>
