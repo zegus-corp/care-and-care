@@ -42,6 +42,10 @@ a:hover {
     grid-template-columns: auto;
 }
 
+#top-div {
+    height: max-content;
+}
+
 .link-holder {
     display: grid;
     grid-template-columns: 0.9fr 0.1fr;
@@ -197,6 +201,9 @@ footer img {
 @media screen and (max-width: 768px) {
     html {
         font-size: 50%;
+    }
+    .empty-div {
+        display: none;
     }
     #main-section {
         grid-template-columns: 1fr;
