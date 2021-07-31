@@ -103,6 +103,10 @@ a:hover {
     text-align: center;
 }
 
+.why-us {
+    margin-left: 5%;
+}
+
 #about p {
     font-size: 1.5rem;
     line-height: 200%;
